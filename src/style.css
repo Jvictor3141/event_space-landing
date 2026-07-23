@@ -13,14 +13,18 @@
   --text-color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   position: sticky;
   top: 0;
-  height: 80px;
+  height: 60px;
   margin-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 6px 10px;
+  padding: 0px 10px;
   align-items: center;
   background: #36150D;
   background: linear-gradient(45deg, rgba(54, 21, 13, 1) 0%, rgba(231, 127, 103, 1) 42%, rgba(225, 95, 65, 1) 85%);
@@ -37,6 +41,7 @@ nav {
   justify-content: center;
   height: 100%;
 }
+
 nav > .nav-links {
   width: 100%;
   display: flex;
@@ -45,16 +50,23 @@ nav > .nav-links {
 }
 
 nav > .nav-links li {
-  padding: 2px 4px;
+  display: flex;
+  align-items: center;
+  padding: 2px 12px;
   font-weight: bold;
   position: relative;
+  height: 50%;
 }
 
 .nav-item{
   color: var(--text-color);
 }
 
-.nav-item.active::after {
+.nav-item:hover {
+  color: rgb(231, 127, 103);
+}
+
+.nav-item::after {
   content: "";
   position: absolute;
   left: 0;
@@ -62,12 +74,19 @@ nav > .nav-links li {
   width: 100%;
   height: 3px;
   background-color: var(--text-color);
+  transition: .3s;
+  z-index: -1;
+}
+
+.nav-item:hover::after {
+  height: 100%;
+  transition: .3s;
 }
 
 #hero {
   height: 100vh;
   position: relative;
-  margin-top: -100px;
+  margin-top: -80px;
 }
 
 #hero > .apresentation{
@@ -119,15 +138,15 @@ nav > .nav-links li {
   margin-top: 20px;
   padding: 8px;
   justify-content: space-around;
-  height: 500px
-
+  height: 600px;
+  scroll-margin-top: 80px
 }
 
 .about-txt{
   padding: 0 12px;
 }
 
-.about-txt h2{
+.title-section{
   color: var(--primary-color);
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
@@ -151,6 +170,35 @@ nav > .nav-links li {
   object-fit: cover;
 }
 
+#about ul {
+  margin-top: 50px;
+}
+
+#about li {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  padding-bottom: 4px;
+}
+
+#about li::before {
+  content: "✓";
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: bold;
+}
+
 #services{
   margin-top: 20px;
+  padding: 8px;
+  height: 500px
+}
+
+.services-txt {
+  padding: 0 12px;
 }
