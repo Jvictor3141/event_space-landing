@@ -3,110 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Eventos</title>
-  <link rel="stylesheet" href="./src/style.css">
+  <meta name="description" content="Um espaço especial para casamentos, celebrações e eventos corporativos.">
+  <title>Home Events | Seu evento, do seu jeito</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
-  <header>
-    <h1>Home Events</h1>
-    <nav>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Home Events, início">Home <span>Events</span></a>
+    <nav aria-label="Navegação principal">
       <ul class="nav-links">
-        <li><a class="nav-item active" href="#about">Sobre</a></li>
-        <li><a  class="nav-item" href="services">Serviços</a></li>
-        <li><a  class="nav-item" href="contact-us">Contate-nos</a></li>
+        <li><a class="nav-item" href="#about">O espaço</a></li>
+        <li><a class="nav-item" href="#services">Experiências</a></li>
+        <li><a class="nav-item" href="#contact-us">Contato</a></li>
       </ul>
     </nav>
+    <a class="header-cta" href="#contact-us">Faça seu orçamento <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
   </header>
 
   <main>
-
-    <section id="hero">
-
-      <div class="apresentation">
-
-        <h2>Cada grande história merece um lugar especial para acontecer.</h2>
-        <span>Ambientes modernos, estrutura completa e atendimento dedicado para tornar seu evento exatamente como você imaginou.</span>
-
+    <section id="home" class="hero">
+      <img class="hero-image" src="./src/assets/banner.png" alt="Salão preparado para receber uma celebração">
+      <div class="hero-content">
+        <p class="eyebrow">O lugar onde os bons momentos acontecem</p>
+        <h1>Cada grande história merece um lugar especial.</h1>
+        <p class="hero-description">Ambientes modernos, estrutura completa e cuidado em cada detalhe para tornar seu evento exatamente como você imaginou.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#contact-us">Planeje seu evento <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="#about">Conheça o espaço <span aria-hidden="true">↓</span></a>
+        </div>
       </div>
-
-      <img src="./src/assets/banner.png" alt="banner espaco para evento">
-
+      <div class="hero-note"><span>01 — 03</span><span>Um espaço, infinitas possibilidades</span></div>
     </section>
 
-    <section id="about">
-
-      <div class="about-txt">
-
+    <section id="about" class="about section-wrap">
+      <div class="about-copy">
+        <p class="eyebrow eyebrow-dark">Sobre a Home Events</p>
         <h2 class="title-section">Mais do que um espaço, o cenário ideal para o seu evento.</h2>
-
-        <p>Nosso espaço foi pensado para receber momentos que merecem ser lembrados. Com uma estrutura moderna, ambientes confortáveis e uma equipe preparada para oferecer todo o suporte necessário, proporcionamos o local ideal para casamentos, aniversários, confraternizações, formaturas, eventos corporativos e diversas outras celebrações.</p>
-
-        <p>Cada evento é único. Por isso, trabalhamos para oferecer um ambiente versátil, acolhedor e preparado para atender diferentes estilos e necessidades, garantindo tranquilidade desde o planejamento até o grande dia.</p>
-
-        <ul class="caracteristicas">
-
-          <li><strong>-</strong> Ambiente moderno e elegante;</li>
-          <li><strong>-</strong> Espaço para até 200 convidados (ajuste conforme a capacidade real);</li>
-          <li><strong>-</strong> Estacionamento próprio;</li>
-          <li><strong>-</strong> Área para buffet e cozinha de apoio;</li>
-          <li><strong>-</strong> Acessibilidade;</li>
-          <li><strong>-</strong> Localização de fácil acesso.</li>
-
+        <p>Nosso espaço foi pensado para receber momentos que merecem ser lembrados. Com ambientes confortáveis e uma equipe atenta, oferecemos o local ideal para celebrações especiais e encontros profissionais.</p>
+        <p>Cada evento é único. Por isso, nosso ambiente versátil se adapta a diferentes estilos e necessidades — do planejamento até o grande dia.</p>
+        <ul class="features">
+          <li>Ambiente moderno e elegante</li>
+          <li>Capacidade para até 200 convidados</li>
+          <li>Estacionamento e acessibilidade</li>
+          <li>Área para buffet e cozinha de apoio</li>
         </ul>
-
+        <a class="inline-link" href="#services">Descubra nossas possibilidades <span aria-hidden="true">→</span></a>
       </div>
-
-      <div class="about-img">
-
-        <img src="./src/assets/event-space.png" alt="imagem do espaco do evento">
-
-      </div>
-
+      <div class="about-img"><img src="./src/assets/event-space.png" alt="Interior amplo e iluminado do espaço para eventos"><div class="image-caption"><strong>Um lugar para celebrar</strong><span>Momentos que ficam com você</span></div></div>
     </section>
 
-    <section id="services">
-
-      <div class="services-txt">
-        <h2 class="title-section">Tudo o que você precisa para um evento de sucesso</h2>
-        <p>Oferecemos uma estrutura completa para receber diferentes tipos de eventos com conforto, praticidade e toda a atenção aos detalhes.</p>
+    <section id="services" class="services-section">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow eyebrow-dark">Feito para celebrar</p><h2 class="title-section">Um espaço. Muitas formas de comemorar.</h2></div>
+          <p>Da primeira ideia ao último brinde, você encontra aqui a estrutura para criar uma experiência com a sua cara.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card"><span class="service-number">01</span><span class="service-icon" aria-hidden="true">✳</span><h3>Casamentos</h3><p>Um cenário acolhedor para celebrar o começo de uma nova história.</p></article>
+          <article class="service-card"><span class="service-number">02</span><span class="service-icon" aria-hidden="true">✦</span><h3>Aniversários</h3><p>Reúna quem você ama e transforme mais um ano em uma grande lembrança.</p></article>
+          <article class="service-card"><span class="service-number">03</span><span class="service-icon" aria-hidden="true">◇</span><h3>Eventos corporativos</h3><p>Encontros, lançamentos e confraternizações com conforto e praticidade.</p></article>
+          <article class="service-card"><span class="service-number">04</span><span class="service-icon" aria-hidden="true">❋</span><h3>Formaturas</h3><p>Uma conquista importante merece uma comemoração à altura.</p></article>
+          <article class="service-card"><span class="service-number">05</span><span class="service-icon" aria-hidden="true">♡</span><h3>Encontros especiais</h3><p>Chás, bodas e celebrações intimistas para estar perto de quem importa.</p></article>
+          <article class="service-card service-card-callout"><p>Tem outra ideia em mente?</p><a href="#contact-us">Vamos conversar <span aria-hidden="true">↗</span></a></article>
+        </div>
       </div>
-
-      <div>
-
-        <div>
-          
-        </div>
-
-        <div>
-
-        </div>
-
-        <div>
-
-        </div>
-
-        <div>
-
-        </div>
-
-        <div>
-
-        </div>
-
-        <div>
-
-        </div>
-
-      </div>
-
     </section>
 
-    <section id="contact-us"></section>
+    <section class="quote-band"><p>“Os melhores momentos começam com um lugar que faz você se sentir em casa.”</p><span>Home Events</span></section>
+
+    <section id="contact-us" class="contact-section">
+      <div class="section-wrap contact-layout">
+        <div class="contact-copy">
+          <p class="eyebrow">Vamos começar?</p>
+          <h2>Conte um pouco sobre o seu evento.</h2>
+          <p>Preencha o formulário e nossa equipe entrará em contato para conversar sobre os próximos passos.</p>
+          <div class="contact-details">
+            <div><span class="detail-icon" aria-hidden="true"><img src="./src/assets/mail.svg" alt="Icone de Email"></span><span><small>E-mail</small><a href="mailto:contato@homeevents.com.br">contato@homeevents.com.br</a></span></div>
+            <div><span class="detail-icon" aria-hidden="true"><img src="./src/assets/map-pin.svg" alt="Icone de Local"></span><span><small>Localização</small><span>São Paulo · SP</span></span></div>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <div class="form-row">
+            <label>Seu nome<input name="name" type="text" placeholder="Como podemos chamar você?" autocomplete="name" required></label>
+            <label>Seu e-mail<input name="email" type="email" placeholder="voce@email.com" autocomplete="email" required></label>
+          </div>
+          <div class="form-row">
+            <label>Tipo de evento<select name="event" required><option value="" disabled selected>Selecione uma opção</option><option>Casamento</option><option>Aniversário</option><option>Evento corporativo</option><option>Formatura</option><option>Outro</option></select></label>
+            <label>Data prevista<input name="date" type="date"></label>
+          </div>
+          <label>Conte um pouco mais<textarea name="message" rows="4" placeholder="Número de convidados, ideias ou dúvidas..."></textarea></label>
+          <button class="button button-primary" type="submit">Enviar pedido de orçamento <span aria-hidden="true">→</span></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer></footer>
+
+  <footer class="site-footer">
+    <div class="footer-main"><a class="brand" href="#home">Home <span>Events</span></a><p>Um espaço especial para os momentos que merecem ser lembrados.</p><a class="back-top" href="#home">Voltar ao topo ↑</a></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Home Events. Projeto demonstrativo.</span><span>Feito para celebrar bons encontros.</span></div>
+  </footer>
   <script src="./src/script.js"></script>
 </body>
 </html>
