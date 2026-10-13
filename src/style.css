@@ -8,8 +8,8 @@
 }
 
 :root {
-  --primary-color: #36150D;
-  --secondary-color: #f6dad6;
+  --primary-color: #030045;
+  --secondary-color: #aaaace;
   --text-color: #fff;
 }
 
@@ -26,8 +26,7 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
   padding: 0px 10px;
   align-items: center;
-  background: #36150D;
-  background: linear-gradient(45deg, rgba(54, 21, 13, 1) 0%, rgba(231, 127, 103, 1) 42%, rgba(225, 95, 65, 1) 85%);
+  background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgb(9, 9, 121) 17%, rgb(0, 166, 199) 49%);
   z-index: 10;
 }
 
@@ -63,7 +62,7 @@ nav > .nav-links li {
 }
 
 .nav-item:hover {
-  color: rgb(231, 127, 103);
+  color: rgb(9, 9, 121);
 }
 
 .nav-item::after {
@@ -150,7 +149,7 @@ nav > .nav-links li {
   color: var(--primary-color);
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
-  border-left: 2px solid #36150D;
+  border-left: 2px solid var(--primary-color);
   padding-left: 8px;
   margin-bottom: 50px;
 }
